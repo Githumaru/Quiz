@@ -79,8 +79,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'my_database',
-        'HOST': 'localhost',
-        'PORT': 27017,
+        'CLIENT': {
+            'host': 'quiz_project-db-1',
+            'port': 27017,
+            'username': 'root',
+            'password': 'example',
+        }
     }
 }
 
